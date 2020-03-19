@@ -2,13 +2,16 @@
 ---------------------------------------------------||Navbar
 -----------------------------------------------------======
 */
-#navbar .logo {
-  float: none;
-  text-align: center;
+
+.flex-header  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+
 #navbar ul, #navbar ul li {
-  float: none;
+  margin-top: 10px;
 }
 
 #navbar ul li a {
@@ -33,17 +36,12 @@
 ------------------------------------------------||Home Info
 --------------------------------------------------=========
 */
-#home-info .info-img {
-  display: none;
-}
+
+
 
 #home-info {
   height: 550px;
-}
-
-#home-info .info-content {
-  float: none;
-  width: 100%;
+  flex-direction: column;
 }
 
 /*----------------------------------------------------=====
