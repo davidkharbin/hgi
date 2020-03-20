@@ -10,13 +10,21 @@
 }
 
 
-#navbar ul, #navbar ul li {
-  margin-top: 10px;
+#navbar ul, #navbar ul {
+  flex-direction: column;
+}
+
+#navbar ul, #navbar ul:first-child {
+  margin-top: 15px;
 }
 
 #navbar ul li a {
   padding: 5px;
-  border-bottom: #444 dotted 1px;
+  border-bottom: #C0B283 dotted 1px;
+}
+
+h1.logo span {
+  display: none;
 }
 
 /*-------------------------------------------------========
@@ -28,8 +36,12 @@
 }
 
 #showcase .showcase-content {
-  padding-top: 70px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 3rem;
 }
 
 /*------------------------------------------------=========
@@ -37,11 +49,18 @@
 --------------------------------------------------=========
 */
 
-
-
 #home-info {
-  height: 550px;
-  flex-direction: column;
+  flex-direction: column-reverse;
+}
+
+#home-info .info-img {
+  flex: 1;
+  flex-basis: 500px;
+}
+
+#home-info .info-content {
+  flex: 1;
+  flex-basis: 500px;
 }
 
 /*----------------------------------------------------=====
@@ -83,3 +102,8 @@
 -------------------------------------------------||Training
 ---------------------------------------------------========
 */
+
+#braceimg {
+  float: none;
+  margin-top: 15px;
+}

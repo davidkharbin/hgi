@@ -234,22 +234,19 @@ h1.logo span {
 */
 
 #home-info {
-  height: 450px;
   display: flex;
+  justify-content: stretch;
 }
 
 #home-info .info-img {
-  flex: 1;
+  flex-basis: 50%;
   background: url("../img/evaluationcamp2.jpg") no-repeat center center/cover;
-  min-height: 100%;
 }
 
 #home-info .info-content {
-  width: 50%;
-  height: 100%;
+  flex-basis: 50%;
   text-align: center;
   padding: 50px 30px;
-  overflow: hidden;
 }
 
 #home-info .info-content p {
@@ -412,7 +409,7 @@ h1.logo span {
 }
 
 .training {
-  column-count: 1;
+  column-count: 4;
   column-gap: 3rem;
   padding-bottom: 2rem;
   column-rule: solid 2px var(--secondary);
@@ -444,7 +441,6 @@ h1.logo span {
 }
 
 iframe {
-  width: 95%;
   border-radius: 10px;
 }
 
