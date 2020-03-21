@@ -1,6 +1,6 @@
-/*-------------------------------=========
--------------------------------||Variables
----------------------------------=========
+/*------------------------------------------------=========
+------------------------------------------------||Variables
+--------------------------------------------------=========
 */
 :root {
   --dark: #373737;
@@ -10,13 +10,20 @@
   --paper: #f4f4f4;
 }
 
-/*-------------------------===============
--------------------------||Utility Classes
----------------------------===============
+/*------------------------------------------===============
+------------------------------------------||Utility Classes
+--------------------------------------------===============
 */
 .container {
   margin: auto;
   max-width: 1100px;
+  padding: 0 20px;
+  overflow: auto;
+}
+
+.container-wide {
+  margin: auto;
+  max-width: 1600px;
   padding: 0 20px;
   overflow: auto;
 }
@@ -83,9 +90,9 @@
   line-height: 1.2;
 }
 
-/*---------------------------------=======
----------------------------------||Padding
------------------------------------=======
+/*--------------------------------------------------=======
+--------------------------------------------------||Padding
+----------------------------------------------------=======
 */
 .py-1 {
   padding: 10px 0;
@@ -107,9 +114,9 @@
 }
 
 
-/*----------------------------============
-----------------------------||Main Styling
-------------------------------============
+/*---------------------------------------------============
+---------------------------------------------||Main Styling
+-----------------------------------------------============
 */
 html,
 body {
@@ -131,9 +138,9 @@ p {
   margin: 10px 0;
 }
 
-/*----------------------------------======
-----------------------------------||Navbar
-------------------------------------======
+/*---------------------------------------------------======
+---------------------------------------------------||Navbar
+-----------------------------------------------------======
 */
 #navbar {
   background: var(--dark);
@@ -146,10 +153,19 @@ p {
   color: var(--white);
 }
 
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-header ul {
+  display: flex;
+}
+
 h1.logo::before {
   content: '';
   height: 50px;
-  width: 40px;
+  width: 50px;
   background: url('../img/leg-logo.png') center center/cover;
   float: left;
   margin-top: 3px;
@@ -161,19 +177,14 @@ h1.logo span {
 }
 
 #navbar h1 {
-  float: left;
   font-size: 2.5rem;
 }
 
 #navbar ul {
   list-style: none;
   margin: 0;
-  float: right;
 }
 
-#navbar ul li {
-  float: left;
-}
 
 #navbar ul li a {
   display: block;
@@ -191,12 +202,13 @@ h1.logo span {
   background: var(--secondary);
 }
 
-/*--------------------------------========
---------------------------------||Showcase
-----------------------------------========
+/*-------------------------------------------------========
+-------------------------------------------------||Showcase
+---------------------------------------------------========
 */
 #showcase {
-  background: linear-gradient(rgba(55, 55, 55, 0.5), rgba(55, 55, 55, 0.5)), url("../img/hero.jpeg") no-repeat center center/cover;
+  background: linear-gradient(rgba(55, 55, 55, 0.5), rgba(55, 55, 55, 0.5)), 
+  url("../img/hero.jpeg") no-repeat center center/cover;
   height: 100vh;
 }
 
@@ -216,29 +228,25 @@ h1.logo span {
   line-height: 2rem;
 }
 
-/*-------------------------------=========
--------------------------------||Home Info
----------------------------------=========
+/*------------------------------------------------=========
+------------------------------------------------||Home Info
+--------------------------------------------------=========
 */
 
 #home-info {
-  height: 450px;
+  display: flex;
+  justify-content: stretch;
 }
 
 #home-info .info-img {
-  float: left;
-  width: 50%;
+  flex-basis: 50%;
   background: url("../img/evaluationcamp2.jpg") no-repeat center center/cover;
-  min-height: 100%;
 }
 
 #home-info .info-content {
-  float: right;
-  width: 50%;
-  height: 100%;
+  flex-basis: 50%;
   text-align: center;
   padding: 50px 30px;
-  overflow: hidden;
 }
 
 #home-info .info-content p {
@@ -255,9 +263,9 @@ h1.logo span {
 }
 
 
-/*--------------------------------========
---------------------------------||Features
-----------------------------------========
+/*-------------------------------------------------========
+-------------------------------------------------||Features
+---------------------------------------------------========
 */
 .box {
   float: left;
@@ -275,9 +283,9 @@ h1.logo span {
   margin-bottom: 10px;
 }
 
-/*------------------------------==========
-------------------------------||About Info
---------------------------------==========
+/*-----------------------------------------------==========
+-----------------------------------------------||About Info
+-------------------------------------------------==========
 */
 #about-info .info-right {
   float: right;
@@ -305,13 +313,14 @@ h1.logo span {
   text-align: center;
 }
 
-/*----------------------------============
-----------------------------||Testimonials
-------------------------------============
+/*---------------------------------------------============
+---------------------------------------------||Testimonials
+-----------------------------------------------============
 */
 #testimonials {
   height: 100%;
-  background: linear-gradient(rgba(55, 55, 55, 0.7), rgba(55, 55, 55, 0.7)), url("../img/bridge-light.jpeg") no-repeat center/cover;
+  background: linear-gradient(rgba(55, 55, 55, 0.7), rgba(55, 55, 55, 0.7)), 
+  url("../img/bridge-light.jpeg") no-repeat center/cover;
   padding-top: 100px;
   background-attachment: fixed;
 }
@@ -336,9 +345,9 @@ h1.logo span {
   /* opacity: 0.9; */
 }
 
-/*----------------------------============
-----------------------------||Contact Form
-------------------------------============
+/*---------------------------------------------============
+---------------------------------------------||Contact Form
+-----------------------------------------------============
 */
 #contact-form .form-group {
   margin-bottom: 20px;
@@ -366,13 +375,14 @@ h1.logo span {
   border-color: var(--primary);
 }
 
-/*----------------------------============
-----------------------------||Bottom Image
-------------------------------============
+/*---------------------------------------------============
+---------------------------------------------||Bottom Image
+-----------------------------------------------============
 */
 
 .purpose {
-  background: linear-gradient(rgba(55, 55, 55, 0.7), rgba(55, 55, 55, 0.7)), url("../img/casting.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(55, 55, 55, 0.7), rgba(55, 55, 55, 0.7)), 
+  url("../img/casting.jpg") no-repeat center center/cover;
   background-size: cover;
   color: #f4f4f4;
   height: 75vh;
@@ -385,9 +395,60 @@ h1.logo span {
   margin: 0 30px;
 }
 
-/*----------------------------------======
-----------------------------------||Footer
-------------------------------------======
+/*-------------------------------------------------========
+-------------------------------------------------||Training
+---------------------------------------------------========
+*/
+.main-training {
+  text-align: center;
+  margin:0;
+  padding: 0;
+  padding: 2rem;
+  background: var(--paper);
+  padding: rem;
+}
+
+.training {
+  column-count: 4;
+  column-gap: 3rem;
+  padding-bottom: 2rem;
+  column-rule: solid 2px var(--secondary);
+}
+
+.main-training section h4,
+.main-training section p,
+.main-training section ul {
+  text-align: left;
+}
+
+.main-training section h4,
+.main-training section h2 {
+  padding-top: 2rem;
+}
+
+.main-training section ul {
+  list-style-position: inside;
+  margin: 1rem 0;
+}
+
+.training img {
+  width: 90%;
+}
+
+#braceimg {
+  width: 40%;
+  float: right;
+}
+
+iframe {
+  border-radius: 10px;
+}
+
+
+
+/*---------------------------------------------------======
+---------------------------------------------------||Footer
+-----------------------------------------------------======
 */
 footer {
   color: var(--dark);
@@ -395,6 +456,7 @@ footer {
   text-align: center;
   display: flex;
   justify-content: stretch;
+  border: 1px dotted var(--secondary);
 }
 
 .footer-left {
