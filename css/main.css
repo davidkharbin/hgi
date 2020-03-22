@@ -177,7 +177,7 @@ h1.logo span {
 }
 
 #navbar h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 #navbar ul {
@@ -409,7 +409,7 @@ h1.logo span {
 }
 
 .training {
-  column-count: 4;
+  column-count: 5;
   column-gap: 3rem;
   padding-bottom: 2rem;
   column-rule: solid 2px var(--secondary);
