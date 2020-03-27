@@ -13,6 +13,52 @@
   overflow: auto;
 }
 
+.text-primary {
+  color: #C0B283;
+}
+
+.btn-light, .btn-dark {
+  display: inline-block;
+  font-size: 1.1rem;
+  padding: 13px 20px;
+  cursor: pointer;
+  border: 1px solid #C0B283;
+  border-radius: 5px;
+}
+
+.btn-light {
+  background-color: #f4f4f4;
+  color: #373737;
+}
+
+.btn-dark {
+  background: #373737;
+}
+
+.bg-primary {
+  background: #C0B283;
+  color: #373737;
+}
+
+.bg-dark {
+  background: #373737;
+  color: white;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #373737;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
@@ -65,7 +111,7 @@ body {
 }
 
 #navbar .leg-logo {
-  height: 85px;
+  height: 70px;
   width: 70px;
   background: url(../img/leg-logo.png) center center/cover;
   border-radius: 50%;
@@ -75,14 +121,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  padding-right: 30px;
 }
 
 #navbar .logo-flex h1 {
   font-size: 2.5rem;
+  margin-top: 12px;
 }
 
 #navbar ul {
@@ -98,14 +142,6 @@ body {
   padding: 5px;
 }
 
-#navbar ul li {
-  border-bottom: #f4f4f4 1px dotted;
-}
-
-#navbar ul li:last-child {
-  border-bottom: none;
-}
-
 #navbar ul li a {
   display: block;
   padding: 5px;
@@ -115,11 +151,6 @@ body {
 #navbar ul li a.current {
   background: #C0B283;
   color: #373737;
-}
-
-#navbar a {
-  color: #f4f4f4;
-  text-decoration: none;
 }
 
 .nav-flex {
@@ -136,7 +167,99 @@ body {
 }
 
 #showcase {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(55, 55, 55, 0.5)), to(rgba(55, 55, 55, 0.5))), url(../img/hero.jpeg) no-repeat right center/cover;
-  background: linear-gradient(rgba(55, 55, 55, 0.5), rgba(55, 55, 55, 0.5)), url(../img/hero.jpeg) no-repeat right center/cover;
-  height: 50vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(55, 55, 55, 0.5)), to(rgba(55, 55, 55, 0.5))), url(../img/hero.jpeg) no-repeat center center/cover;
+  background: linear-gradient(rgba(55, 55, 55, 0.5), rgba(55, 55, 55, 0.5)), url(../img/hero.jpeg) no-repeat center center/cover;
+  border-bottom: 1px solid #C0B283;
 }
+
+#showcase .showcase-content {
+  color: white;
+  padding: 4rem 0;
+  margin-left: 33%;
+  text-align: center;
+}
+
+#showcase h1 {
+  font-size: 3.1rem;
+  line-height: 3.5rem;
+}
+
+#showcase p {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  margin: 1rem 0;
+  padding-bottom: 1.1rem;
+}
+
+/*------------------------------------------------=========
+------------------------------------------------||Main-Home
+--------------------------------------------------=========
+*/
+#home-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  text-align: center;
+}
+
+#home-info .info-img {
+  background: url(../img/evaluationcamp2.jpg) no-repeat left center/cover;
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
+}
+
+#home-info .info-content {
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
+  padding: 3.5rem 1.75rem;
+}
+
+#home-info .info-content p {
+  padding-bottom: 1.5rem;
+  margin: 1rem 0;
+}
+
+#home-info .info-content h2 {
+  padding-bottom: 1.4rem;
+  margin-top: 3rem;
+}
+
+#home-info .info-content li {
+  line-height: 1.5rem;
+  margin-bottom: .75rem;
+}
+
+#features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box {
+  text-align: center;
+  padding: 3rem;
+  width: 100%;
+}
+
+.box h3 {
+  padding: .75rem 0;
+}
+
+.box p {
+  margin: .5rem 0;
+}
+/*# sourceMappingURL=main.css.map */

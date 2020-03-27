@@ -22,13 +22,15 @@ body {
 ---------------------------------------------------||Header
 -----------------------------------------------------======
 */
+
+// Navigation
 #navbar {
   background: $dark-color;
   overflow: auto; 
   border-bottom: 1px solid $primary-color;
 
   .leg-logo {
-    height: 85px;
+    height: 70px;
     width: 70px;
     background: $logo-image center center/cover;
     border-radius: 50%;    
@@ -36,10 +38,11 @@ body {
 
   .logo-flex {
     display: flex;
-    flex-direction: column;
+    padding-right: 30px;
 
     h1 {
       font-size: 2.5rem;
+      margin-top: 12px;
     }
   }
 
@@ -51,11 +54,6 @@ body {
     padding: 5px;
 
     li {
-      border-bottom: $light-color 1px dotted;
-      &:last-child {
-        border-bottom: none;
-      }
-
       a {
         display: block;
         padding: 5px;
@@ -68,11 +66,6 @@ body {
       }
     }
   }
-
-  a {
-    color: $light-color; 
-    text-decoration: none;
-  }  
 }
 
 .nav-flex {
@@ -84,6 +77,83 @@ body {
 //Showcase
 #showcase {
   background: linear-gradient(rgba(55, 55, 55, 0.5),
-rgba(55, 55, 55, 0.5)), $showcase-image no-repeat right center/cover;
-  height: 50vh;
+rgba(55, 55, 55, 0.5)), $showcase-image no-repeat center center/cover;
+  border-bottom: 1px solid $primary-color;
+
+  .showcase-content {
+    color: white;
+    padding: 4rem 0;
+    margin-left: 33%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3.1rem;
+    line-height: 3.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin: 1rem 0;
+    padding-bottom: 1.1rem ;
+  }
+}
+
+/*------------------------------------------------=========
+------------------------------------------------||Main-Home
+--------------------------------------------------=========
+*/
+// Intro box
+#home-info {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: stretch;
+  text-align: center;
+
+  .info-img {
+    background: $info-image no-repeat left center/cover;
+    flex-basis: 500px;
+  }
+
+  .info-content {
+    flex-basis: 500px;
+    padding: 3.5rem 1.75rem;
+
+    p {
+      padding-bottom: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    h2 {
+      padding-bottom: 1.4rem;
+      margin-top: 3rem;
+    }
+
+    li {
+      line-height: 1.5rem;
+      margin-bottom: .75rem;
+    }
+  }
+}
+
+// Icon Boxes
+#features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  text-align: center;
+  padding: 3rem;
+  width: 100%;
+
+  h3 {
+    padding: .75rem 0;
+  }
+
+  p {
+    margin: .5rem 0;
+  }
 }

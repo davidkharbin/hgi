@@ -4,3 +4,51 @@
   padding: 0 20px;
   overflow: auto;
 }
+
+.text-primary {
+  color: $primary-color;
+}
+
+%btn {
+  display: inline-block;
+  font-size: 1.1rem;
+  padding: 13px 20px;
+  cursor: pointer;
+  border: 1px solid $primary-color;
+  border-radius: 5px;
+}
+
+.btn-light {
+  @extend %btn;
+  background-color: $light-color;
+  color: $dark-color;
+}
+
+.btn-dark {
+  @extend %btn;
+  background: $dark-color;
+}
+
+.bg-primary {
+  background: $primary-color;
+  color: $dark-color;
+}
+
+.bg-dark {
+  background: $dark-color;
+  color: white;
+}
+
+.bg-light {
+  background: $light-color;
+  color: $dark-color;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
