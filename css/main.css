@@ -57,7 +57,7 @@ body {
 /*---------------------------------------------------======
 ---------------------------------------------------||Header
 -----------------------------------------------------======
-<<<<<<< HEAD
+
 */
 #navbar {
   background: #373737;
@@ -141,7 +141,6 @@ body {
   background: linear-gradient(rgba(55, 55, 55, 0.5), rgba(55, 55, 55, 0.5)), url(../img/hero.jpeg) no-repeat right center/cover;
   height: 50vh;
 }
-=======
 */
 #navbar {
   background: var(--dark);
@@ -178,7 +177,7 @@ h1.logo span {
 }
 
 #navbar h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 #navbar ul {
@@ -474,4 +473,3 @@ footer {
   padding: 0 5%;
   border-left: 1px dotted var(--secondary);
 }
->>>>>>> 986a773c5713b6ef083a0ae09638dd7b28d9b6a0
