@@ -1,0 +1,89 @@
+@import 'config';
+@import 'utilities';
+@import 'media';
+
+/*-----------------------------------======================
+-----------------------------------||General Styles / Reset
+-------------------------------------======================
+*/
+html,
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*---------------------------------------------------======
+---------------------------------------------------||Header
+-----------------------------------------------------======
+*/
+#navbar {
+  background: $dark-color;
+  overflow: auto; 
+  border-bottom: 1px solid $primary-color;
+
+  .leg-logo {
+    height: 85px;
+    width: 70px;
+    background: $logo-image center center/cover;
+    border-radius: 50%;    
+  }
+
+  .logo-flex {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    padding: 5px;
+
+    li {
+      border-bottom: $light-color 1px dotted;
+      &:last-child {
+        border-bottom: none;
+      }
+
+      a {
+        display: block;
+        padding: 5px;
+        text-align: center;
+
+        &.current {
+          background: $primary-color;
+          color: $dark-color;
+        }
+      }
+    }
+  }
+
+  a {
+    color: $light-color; 
+    text-decoration: none;
+  }  
+}
+
+.nav-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+//Showcase
+#showcase {
+  background: linear-gradient(rgba(55, 55, 55, 0.5),
+rgba(55, 55, 55, 0.5)), $showcase-image no-repeat right center/cover;
+  height: 50vh;
+}
