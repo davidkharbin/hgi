@@ -1,22 +1,6 @@
-@import 'config';
-@import 'utilities';
-@import 'media';
-
-/*-----------------------------------======================
------------------------------------||General Styles / Reset
--------------------------------------======================
-*/
-html,
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #fff;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "config";
+@import "utilities";
+@import "media";
 
 /*---------------------------------------------------======
 ---------------------------------------------------||Header
@@ -26,14 +10,14 @@ body {
 // Navigation
 #navbar {
   background: $dark-color;
-  overflow: auto; 
+  overflow: auto;
   border-bottom: 1px solid $primary-color;
 
   .leg-logo {
     height: 70px;
     width: 70px;
     background: $logo-image center center/cover;
-    border-radius: 50%;    
+    border-radius: 50%;
   }
 
   .logo-flex {
@@ -76,8 +60,8 @@ body {
 
 //Showcase
 #showcase {
-  background: linear-gradient(rgba(55, 55, 55, 0.5),
-rgba(55, 55, 55, 0.5)), $showcase-image no-repeat center center/cover;
+  background: linear-gradient(rgba(55, 55, 55, 0.5), rgba(55, 55, 55, 0.5)),
+    $showcase-image no-repeat center center/cover;
   border-bottom: 1px solid $primary-color;
 
   .showcase-content {
@@ -96,7 +80,7 @@ rgba(55, 55, 55, 0.5)), $showcase-image no-repeat center center/cover;
     font-size: 1.1rem;
     line-height: 2rem;
     margin: 1rem 0;
-    padding-bottom: 1.1rem ;
+    padding-bottom: 1.1rem;
   }
 }
 
@@ -112,7 +96,7 @@ rgba(55, 55, 55, 0.5)), $showcase-image no-repeat center center/cover;
   text-align: center;
 
   .info-img {
-    background: $info-image no-repeat left center/cover;
+    background: linear-gradient(rgba(55, 55, 55, 0.3), rgba(55, 55, 55, 0.3)), $info-image no-repeat left center/cover;
     flex-basis: 500px;
   }
 
@@ -132,7 +116,7 @@ rgba(55, 55, 55, 0.5)), $showcase-image no-repeat center center/cover;
 
     li {
       line-height: 1.5rem;
-      margin-bottom: .75rem;
+      margin-bottom: 0.75rem;
     }
   }
 }
@@ -142,18 +126,148 @@ rgba(55, 55, 55, 0.5)), $showcase-image no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .box {
+    text-align: center;
+    padding: 3rem;
+    width: 100%;
+
+    h3 {
+      padding: 0.75rem 0;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    a {
+      margin-top: 1.5rem;
+    }
+  }
 }
 
-.box {
+/*------------------------------------------===============
+------------------------------------------||Purpose Section
+--------------------------------------------===============
+*/
+#purpose {
+  background: linear-gradient(rgba(55, 55, 55, 0.6), rgba(55, 55, 55, 0.6)),
+    $purpose-image no-repeat center center/cover;
+  color: white;
   text-align: center;
-  padding: 3rem;
-  width: 100%;
+  border-bottom: 1px solid $primary-color;
 
-  h3 {
-    padding: .75rem 0;
+  h2 {
+    font-size: 2.3rem;
+    margin: 1.3rem 0;
   }
 
   p {
-    margin: .5rem 0;
+    margin: 1rem 0;
+  }
+}
+
+/*-----------------------------------------------==========
+-----------------------------------------------||About Page
+-------------------------------------------------==========
+*/
+.about-page {
+  article {
+    text-align: justify;
+    padding: 5px 20px;
+    background: $light-color;
+
+    li {
+      list-style: decimal inside;
+      margin: 1rem 0;
+    }
+  }
+
+  h2 {
+    display: inline-block;
+    margin-top: 25px;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 5px;
+      bottom: -3px;
+      left: -32px;
+      z-index: -1;
+      background: $secondary-color;
+      border-radius: 5px;
+    }
+  }
+
+  a {
+    color: $dark-color;
+    text-decoration: underline;
+  }
+}
+
+.group-img {
+  width: 100%;
+}
+
+.mail {
+  text-align: center;
+
+  p {
+    padding: 0.3rem 0;
+  }
+}
+
+#our-team {
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px 40px;
+  box-shadow: 0px 0px 10px 15px rgba(220, 208, 192, 0.5);
+  border: 1px solid $primary-color;
+  text-align: center;
+
+  img {
+    display: block;
+    max-height: 100px;
+    max-width: 100px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px 0;
+  }
+}
+
+/*---------------------------------------------------======
+---------------------------------------------------||Footer
+-----------------------------------------------------======
+*/
+footer {
+  display: flex;
+  flex-direction: column;
+  background: $light-color;
+  justify-content: stretch;
+
+  .footer-a {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 5px 0;
+    padding: 1rem;
+  }
+
+  .footer-b {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid $secondary-color;
   }
 }

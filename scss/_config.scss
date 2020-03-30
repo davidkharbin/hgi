@@ -5,24 +5,41 @@
 $container-width: 1280px;
 $dark-color: #373737;
 $light-color: #f4f4f4;
-$primary-color: #C0B283;
-$secondary-color: #DCD0C0;
+$primary-color: #c0b283;
+$secondary-color: #dcd0c0;
 $logo-image: url(../img/leg-logo.png);
 $showcase-image: url(../img/hero.jpeg);
 $info-image: url(../img/evaluationcamp2.jpg);
+$purpose-image: url("../img/bridge.jpeg");
 
+/*-----------------------------------======================
+-----------------------------------||General Styles / Reset
+-------------------------------------======================
+*/
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
 
+  p {
+    margin: 1rem 0;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /*------------------------------------------------==============
 ------------------------------------------------||Set Text Color
 --------------------------------------------------==============
 */
 @function set-text-color($color) {
-  @if(lightness($color) > 50) {
+  @if (lightness($color) > 50) {
     @return #000;
-  }
-
-  @else {
+  } @else {
     @return #fff;
   }
 }
