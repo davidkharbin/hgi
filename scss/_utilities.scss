@@ -49,6 +49,11 @@
   color: $dark-color;
 }
 
+.bg-white {
+  background: white;
+  color: $dark-color;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -56,4 +61,58 @@ a {
 
 li {
   list-style: none;
+}
+
+ol {
+  display: inline-block;
+  text-align: left;
+  padding-left: 20px;
+
+  li {
+    list-style: decimal outside;
+  }
+}
+
+/*--------------------------------------------------=======
+--------------------------------------------------||Columns
+----------------------------------------------------=======
+*/
+.reading-page {
+  article {
+    padding: 5px 20px;
+    background: $light-color;
+    margin: 1.5rem 0;
+
+    li {
+      margin: 1rem 0;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+
+  h2 {
+    display: inline-block;
+    margin-top: 25px;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 75px;
+      height: 5px;
+      bottom: -3px;
+      left: -32px;
+      z-index: -1;
+      background: $secondary-color;
+      border-radius: 5px;
+    }
+  }
+
+  a {
+    color: $dark-color;
+    text-decoration: underline;
+  }
 }

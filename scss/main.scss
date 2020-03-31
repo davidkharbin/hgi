@@ -63,16 +63,18 @@
   background: linear-gradient(rgba(55, 55, 55, 0.5), rgba(55, 55, 55, 0.5)),
     $showcase-image no-repeat center center/cover;
   border-bottom: 1px solid $primary-color;
+  overflow: hidden;
 
   .showcase-content {
     color: white;
     padding: 4rem 0;
     margin-left: 33%;
     text-align: center;
+    overflow: hidden;
   }
 
   h1 {
-    font-size: 3.1rem;
+    font-size: 2.5rem;
     line-height: 3.5rem;
   }
 
@@ -96,7 +98,8 @@
   text-align: center;
 
   .info-img {
-    background: linear-gradient(rgba(55, 55, 55, 0.3), rgba(55, 55, 55, 0.3)), $info-image no-repeat left center/cover;
+    background: linear-gradient(rgba(55, 55, 55, 0.3), rgba(55, 55, 55, 0.3)),
+      $info-image no-repeat left center/cover;
     flex-basis: 500px;
   }
 
@@ -171,52 +174,20 @@
 -----------------------------------------------||About Page
 -------------------------------------------------==========
 */
-.about-page {
-  article {
-    text-align: justify;
-    padding: 5px 20px;
-    background: $light-color;
-
-    li {
-      list-style: decimal inside;
-      margin: 1rem 0;
-    }
-  }
-
-  h2 {
-    display: inline-block;
-    margin-top: 25px;
-    position: relative;
-    z-index: 1;
-
-    &:before {
-      content: "";
-      position: absolute;
-      width: 100px;
-      height: 5px;
-      bottom: -3px;
-      left: -32px;
-      z-index: -1;
-      background: $secondary-color;
-      border-radius: 5px;
-    }
-  }
-
-  a {
-    color: $dark-color;
-    text-decoration: underline;
-  }
-}
 
 .group-img {
   width: 100%;
+  margin: 1.5rem 0;
 }
 
-.mail {
-  text-align: center;
-
+#contact-info {
   p {
     padding: 0.3rem 0;
+    text-align: center;
+  }
+
+  address {
+    text-align: center;
   }
 }
 
@@ -224,6 +195,7 @@
   padding: 5px 20px;
   display: flex;
   flex-direction: column;
+  background: white;
 }
 
 .team-box {
@@ -233,7 +205,7 @@
   align-items: center;
   margin: 20px 0;
   padding: 20px 40px;
-  box-shadow: 0px 0px 10px 15px rgba(220, 208, 192, 0.5);
+  box-shadow: 0px 0px 10px 15px rgba(220, 208, 192, 0.8);
   border: 1px solid $primary-color;
   text-align: center;
 
@@ -247,6 +219,11 @@
     margin: 10px 0;
   }
 }
+
+/*-------------------------------------------==============
+-------------------------------------------||Brace Training
+---------------------------------------------==============
+*/
 
 /*---------------------------------------------------======
 ---------------------------------------------------||Footer
