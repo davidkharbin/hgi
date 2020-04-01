@@ -24,6 +24,12 @@ body p {
           box-sizing: border-box;
 }
 
+h3 {
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 5px;
+}
+
 /*------------------------------------------------==============
 ------------------------------------------------||Set Text Color
 --------------------------------------------------==============
@@ -41,8 +47,7 @@ body p {
 
 .btn-light, .btn-dark {
   display: inline-block;
-  font-size: 1.1rem;
-  padding: 13px 20px;
+  padding: 10px 15px;
   cursor: pointer;
   border: 1px solid #c0b283;
   border-radius: 5px;
@@ -87,10 +92,6 @@ a {
   color: white;
 }
 
-li {
-  list-style: none;
-}
-
 ol {
   display: inline-block;
   text-align: left;
@@ -109,24 +110,45 @@ ol li {
   padding: 5px 20px;
   background: #f4f4f4;
   margin: 1.5rem 0;
+  -webkit-column-count: 1;
+          column-count: 1;
 }
 
 .reading-page article li {
   margin: 1rem 0;
+  text-align: center;
+}
+
+.reading-page article li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #c0b283;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
 }
 
 .reading-page article p {
   text-align: justify;
 }
 
-.reading-page h2 {
+.reading-page h2,
+.reading-page h1 {
   display: inline-block;
   margin-top: 25px;
   position: relative;
   z-index: 1;
+  font-size: 30px;
 }
 
-.reading-page h2:before {
+.reading-page h2:before,
+.reading-page h1:before {
   content: "";
   position: absolute;
   width: 75px;
@@ -197,7 +219,6 @@ ol li {
 }
 
 #navbar ul {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,6 +228,10 @@ ol li {
           flex-direction: column;
   margin-top: 15px;
   padding: 5px;
+}
+
+#navbar ul li {
+  list-style: none;
 }
 
 #navbar ul li a {
@@ -424,6 +449,33 @@ ol li {
 -------------------------------------------||Brace Training
 ---------------------------------------------==============
 */
+.training li {
+  list-style: none;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 50%;
+  position: relative;
+  margin: 20px 5px;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#brace-img {
+  display: block;
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 20%;
+}
+
 /*---------------------------------------------------======
 ---------------------------------------------------||Footer
 -----------------------------------------------------======

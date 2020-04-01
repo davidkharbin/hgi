@@ -31,13 +31,14 @@
   }
 
   ul {
-    list-style: none;
     display: flex;
     flex-direction: column;
     margin-top: 15px;
     padding: 5px;
 
     li {
+      list-style: none;
+
       a {
         display: block;
         padding: 5px;
@@ -98,8 +99,7 @@
   text-align: center;
 
   .info-img {
-    background: linear-gradient(rgba(55, 55, 55, 0.3), rgba(55, 55, 55, 0.3)),
-      $info-image no-repeat left center/cover;
+    background: linear-gradient(rgba(55, 55, 55, 0.3), rgba(55, 55, 55, 0.3)), $info-image no-repeat left center/cover;
     flex-basis: 500px;
   }
 
@@ -224,6 +224,34 @@
 -------------------------------------------||Brace Training
 ---------------------------------------------==============
 */
+.training {
+  li {
+    list-style: none;
+  }
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 50%;
+  position: relative;
+  margin: 20px 5px;
+
+  iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+#brace-img {
+  display: block;
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 20%;
+}
 
 /*---------------------------------------------------======
 ---------------------------------------------------||Footer

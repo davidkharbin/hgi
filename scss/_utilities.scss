@@ -11,8 +11,7 @@
 
 %btn {
   display: inline-block;
-  font-size: 1.1rem;
-  padding: 13px 20px;
+  padding: 10px 15px;
   cursor: pointer;
   border: 1px solid $primary-color;
   border-radius: 5px;
@@ -59,10 +58,6 @@ a {
   color: white;
 }
 
-li {
-  list-style: none;
-}
-
 ol {
   display: inline-block;
   text-align: left;
@@ -82,9 +77,20 @@ ol {
     padding: 5px 20px;
     background: $light-color;
     margin: 1.5rem 0;
+    column-count: 1;
 
     li {
       margin: 1rem 0;
+      text-align: center;
+
+      &::before {
+        content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: $primary-color; /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+      }
     }
 
     p {
@@ -92,11 +98,13 @@ ol {
     }
   }
 
-  h2 {
+  h2,
+  h1 {
     display: inline-block;
     margin-top: 25px;
     position: relative;
     z-index: 1;
+    font-size: 30px;
 
     &:before {
       content: "";
