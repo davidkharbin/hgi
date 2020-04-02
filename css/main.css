@@ -24,12 +24,6 @@ body p {
           box-sizing: border-box;
 }
 
-h3 {
-  margin-top: 30px;
-  text-align: center;
-  padding-top: 5px;
-}
-
 /*------------------------------------------------==============
 ------------------------------------------------||Set Text Color
 --------------------------------------------------==============
@@ -119,7 +113,11 @@ ol li {
   text-align: center;
 }
 
-.reading-page article li::before {
+.reading-page article p {
+  text-align: justify;
+}
+
+.reading-page .bullet li::before {
   content: "\2022";
   /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: #c0b283;
@@ -132,10 +130,6 @@ ol li {
   /* Also needed for space (tweak if needed) */
   margin-left: -1em;
   /* Also needed for space (tweak if needed) */
-}
-
-.reading-page article p {
-  text-align: justify;
 }
 
 .reading-page h2,
@@ -163,6 +157,17 @@ ol li {
 .reading-page a {
   color: #373737;
   text-decoration: underline;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h3 {
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 5px;
 }
 
 /* 
@@ -449,15 +454,11 @@ ol li {
 -------------------------------------------||Brace Training
 ---------------------------------------------==============
 */
-.training li {
-  list-style: none;
-}
-
 .iframe-container {
   overflow: hidden;
   padding-top: 50%;
   position: relative;
-  margin: 20px 5px;
+  margin: 50px 5px;
 }
 
 .iframe-container iframe {
@@ -469,11 +470,12 @@ ol li {
   width: 100%;
 }
 
-#brace-img {
+img {
+  max-width: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
   display: block;
-  height: 200px;
-  margin: 20px auto;
-  border-radius: 20%;
+  margin: 10px auto;
 }
 
 /*---------------------------------------------------======

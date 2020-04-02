@@ -82,7 +82,15 @@ ol {
     li {
       margin: 1rem 0;
       text-align: center;
+    }
 
+    p {
+      text-align: justify;
+    }
+  }
+
+  .bullet {
+    li {
       &::before {
         content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
         color: $primary-color; /* Change the color */
@@ -91,10 +99,6 @@ ol {
         width: 1em; /* Also needed for space (tweak if needed) */
         margin-left: -1em; /* Also needed for space (tweak if needed) */
       }
-    }
-
-    p {
-      text-align: justify;
     }
   }
 
@@ -123,4 +127,15 @@ ol {
     color: $dark-color;
     text-decoration: underline;
   }
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h3 {
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 5px;
 }
