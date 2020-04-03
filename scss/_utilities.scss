@@ -81,11 +81,6 @@ ol {
 
     li {
       margin: 1rem 0;
-      text-align: center;
-    }
-
-    p {
-      text-align: justify;
     }
   }
 
@@ -102,13 +97,13 @@ ol {
     }
   }
 
-  h2,
-  h1 {
+  h3 {
     display: inline-block;
     margin-top: 25px;
     position: relative;
     z-index: 1;
-    font-size: 30px;
+    font-size: 20px;
+    text-align: left;
 
     &:before {
       content: "";
@@ -123,14 +118,19 @@ ol {
     }
   }
 
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
   a {
-    color: $dark-color;
+    color: $primary-color;
     text-decoration: underline;
   }
 }
 
-ul,
-ol {
+ul {
   list-style: none;
 }
 
@@ -138,4 +138,19 @@ h3 {
   margin-top: 30px;
   text-align: center;
   padding-top: 5px;
+}
+
+article p {
+  text-align: justify;
+}
+
+.line {
+  width: 100px;
+  height: 2px;
+  background: $primary-color;
+  margin: 5px auto 1rem auto;
+}
+
+article p:first-child {
+  margin-top: 0px;
 }

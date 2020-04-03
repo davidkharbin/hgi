@@ -99,8 +99,7 @@
   text-align: center;
 
   .info-img {
-    background: linear-gradient(rgba(55, 55, 55, 0.3), rgba(55, 55, 55, 0.3)),
-      $info-image no-repeat left center/cover;
+    background: linear-gradient(rgba(55, 55, 55, 0.3), rgba(55, 55, 55, 0.3)), $info-image no-repeat left center/cover;
     flex-basis: 500px;
   }
 
@@ -249,6 +248,14 @@ img {
   margin: 10px auto;
 }
 
+.span-all {
+  column-span: all;
+}
+
+.center-link {
+  width: 100%;
+  text-align: center;
+}
 /*---------------------------------------------------======
 ---------------------------------------------------||Footer
 -----------------------------------------------------======
@@ -271,4 +278,8 @@ footer {
     padding: 1rem;
     border-top: 1px solid $secondary-color;
   }
+}
+
+p.center-text {
+  text-align: center;
 }

@@ -30,7 +30,7 @@ body p {
 */
 .container {
   margin: auto;
-  max-width: 1280px;
+  max-width: 1800px;
   padding: 0 20px;
   overflow: auto;
 }
@@ -110,11 +110,6 @@ ol li {
 
 .reading-page article li {
   margin: 1rem 0;
-  text-align: center;
-}
-
-.reading-page article p {
-  text-align: justify;
 }
 
 .reading-page .bullet li::before {
@@ -132,17 +127,16 @@ ol li {
   /* Also needed for space (tweak if needed) */
 }
 
-.reading-page h2,
-.reading-page h1 {
+.reading-page h3 {
   display: inline-block;
   margin-top: 25px;
   position: relative;
   z-index: 1;
-  font-size: 30px;
+  font-size: 20px;
+  text-align: left;
 }
 
-.reading-page h2:before,
-.reading-page h1:before {
+.reading-page h3:before {
   content: "";
   position: absolute;
   width: 75px;
@@ -154,13 +148,18 @@ ol li {
   border-radius: 5px;
 }
 
+.reading-page h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
 .reading-page a {
-  color: #373737;
+  color: #c0b283;
   text-decoration: underline;
 }
 
-ul,
-ol {
+ul {
   list-style: none;
 }
 
@@ -170,10 +169,50 @@ h3 {
   padding-top: 5px;
 }
 
+article p {
+  text-align: justify;
+}
+
+.line {
+  width: 100px;
+  height: 2px;
+  background: #c0b283;
+  margin: 5px auto 1rem auto;
+}
+
+article p:first-child {
+  margin-top: 0px;
+}
+
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
+@media (min-width: 1281px) {
+  .reading-page article {
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
+    -webkit-column-rule: solid 1px #dcd0c0;
+            column-rule: solid 1px #dcd0c0;
+  }
+  #training-top {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+  #foreword {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+  #intro {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+  .span-all {
+    -webkit-column-span: all;
+            column-span: all;
+  }
+}
+
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
@@ -478,6 +517,16 @@ img {
   margin: 10px auto;
 }
 
+.span-all {
+  -webkit-column-span: all;
+          column-span: all;
+}
+
+.center-link {
+  width: 100%;
+  text-align: center;
+}
+
 /*---------------------------------------------------======
 ---------------------------------------------------||Footer
 -----------------------------------------------------======
@@ -501,10 +550,16 @@ footer .footer-a {
   font-size: 0.8rem;
   margin: 5px 0;
   padding: 1rem;
+  width: 100%;
 }
 
 footer .footer-b {
   text-align: center;
   padding: 1rem;
   border-top: 1px solid #dcd0c0;
+  width: 100%;
+}
+
+p.center-text {
+  text-align: center;
 }
