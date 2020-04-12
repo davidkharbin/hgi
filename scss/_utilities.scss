@@ -1,8 +1,10 @@
 .container {
   margin: auto;
-  max-width: $container-width;
-  padding: 0 20px;
   overflow: auto;
+}
+
+footer {
+  width: 100%;
 }
 
 .text-primary {
@@ -13,19 +15,30 @@
   display: inline-block;
   padding: 10px 15px;
   cursor: pointer;
-  border: 1px solid $primary-color;
   border-radius: 5px;
 }
 
 .btn-light {
   @extend %btn;
   background-color: $light-color;
+  border: 2px solid $secondary-color;
   color: $dark-color;
+
+  &:hover {
+    background-color: $dark-color;
+    color: $light-color;
+  }
 }
 
 .btn-dark {
   @extend %btn;
   background: $dark-color;
+  border: 1px solid $primary-color;
+
+  &:hover {
+    background: $light-color;
+    color: $dark-color;
+  }
 }
 
 .bg-primary {
@@ -74,13 +87,19 @@ ol {
 */
 .reading-page {
   article {
-    padding: 5px 20px;
+    padding: 15px;
     background: $light-color;
-    margin: 1.5rem 0;
-    column-count: 1;
+    margin: 10px;
 
     li {
-      margin: 1rem 0;
+      margin: 15px 0;
+    }
+
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      display: block;
+      margin: 10px auto;
     }
   }
 
@@ -99,7 +118,7 @@ ol {
 
   h3 {
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 10px;
     position: relative;
     z-index: 1;
     font-size: 20px;
@@ -108,10 +127,10 @@ ol {
     &:before {
       content: "";
       position: absolute;
-      width: 75px;
+      width: 45px;
       height: 5px;
-      bottom: -3px;
-      left: -32px;
+      bottom: -4px;
+      left: -25px;
       z-index: -1;
       background: $secondary-color;
       border-radius: 5px;
@@ -135,22 +154,24 @@ ul {
 }
 
 h3 {
-  margin-top: 30px;
   text-align: center;
   padding-top: 5px;
 }
 
 article p {
   text-align: justify;
+  margin: 16px 0;
 }
 
+//Heading spacer
 .line {
-  width: 100px;
+  width: 80px;
   height: 2px;
   background: $primary-color;
-  margin: 5px auto 1rem auto;
+  margin: 10px auto 25px auto;
 }
 
+//for shaving off the top in column views//
 article p:first-child {
   margin-top: 0px;
 }
