@@ -208,6 +208,13 @@ address {
   padding: 5px 20px;
 }
 
+.team-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .team-box {
   display: flex;
   flex-direction: column;
@@ -217,6 +224,7 @@ address {
   padding: 20px 40px;
   border: 1px solid $primary-color;
   text-align: center;
+  max-width: 400px;
 
   img {
     display: block;

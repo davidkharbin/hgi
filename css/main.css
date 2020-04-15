@@ -31,6 +31,7 @@ h2 {
 .container {
   margin: auto;
   overflow: auto;
+  max-width: 100%;
 }
 
 footer {
@@ -114,9 +115,10 @@ ol li {
 ----------------------------------------------------=======
 */
 .reading-page article {
-  padding: 15px;
+  padding: 15px 25px;
   background: #f4f4f4;
   margin: 10px;
+  border: 1px dotted #dcd0c0;
 }
 
 .reading-page article li {
@@ -129,6 +131,10 @@ ol li {
      object-fit: contain;
   display: block;
   margin: 10px auto;
+}
+
+.reading-page .bullet li {
+  position: relative;
 }
 
 .reading-page .bullet li::before {
@@ -158,17 +164,17 @@ ol li {
 .reading-page h3:before {
   content: "";
   position: absolute;
-  width: 45px;
+  width: 40px;
   height: 5px;
   bottom: -4px;
-  left: -25px;
+  left: -35px;
   z-index: -1;
-  background: #dcd0c0;
+  background: #c0b283;
   border-radius: 5px;
 }
 
 .reading-page h1 {
-  font-size: 30px;
+  font-size: 2rem;
   text-align: center;
   margin-top: 20px;
 }
@@ -419,6 +425,21 @@ address {
   padding: 5px 20px;
 }
 
+.team-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .team-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -437,6 +458,7 @@ address {
   padding: 20px 40px;
   border: 1px solid #c0b283;
   text-align: center;
+  max-width: 400px;
 }
 
 .team-box img {
@@ -522,9 +544,6 @@ footer .footer-b {
 }
 
 @media (min-width: 481px) {
-  .container {
-    max-width: 100%;
-  }
   .nav-flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -558,7 +577,7 @@ footer .footer-b {
 
 @media (min-width: 667px) {
   .container {
-    max-width: 90%;
+    max-width: 98%;
   }
   .showcase-content {
     margin-left: 175px;
@@ -567,7 +586,9 @@ footer .footer-b {
 
 @media (min-width: 768px) {
   .showcase-content {
-    margin-left: 270px;
+    margin-left: 300px;
+    padding: 5rem 0;
+    margin-right: 50px;
   }
   .info-content {
     max-width: 60%;
@@ -603,10 +624,28 @@ footer .footer-b {
   }
 }
 
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
+@media (min-width: 1024px) {
+  .showcase-content {
+    padding: 125px 0;
+    margin-left: 450px;
+  }
+  #showcase h1 {
+    font-size: 3.5rem;
+  }
+  #purpose h2 {
+    font-size: 3rem;
+  }
+  #purpose p {
+    font-size: 1.2rem;
+  }
+  .iframe-container {
+    width: 800px;
+  }
+  .reading-page h1 {
+    font-size: 2rem;
+  }
+}
+
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops

@@ -1,6 +1,7 @@
 .container {
   margin: auto;
   overflow: auto;
+  max-width: 100%;
 }
 
 footer {
@@ -87,9 +88,10 @@ ol {
 */
 .reading-page {
   article {
-    padding: 15px;
+    padding: 15px 25px;
     background: $light-color;
     margin: 10px;
+    border: 1px dotted $secondary-color;
 
     li {
       margin: 15px 0;
@@ -105,6 +107,7 @@ ol {
 
   .bullet {
     li {
+      position: relative;
       &::before {
         content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
         color: $primary-color; /* Change the color */
@@ -112,6 +115,14 @@ ol {
         display: inline-block; /* Needed to add space between the bullet and the text */
         width: 1em; /* Also needed for space (tweak if needed) */
         margin-left: -1em; /* Also needed for space (tweak if needed) */
+
+        //FOR ARROW BULLETS
+        // border-color: transparent $primary-color;
+        // border-style: solid;
+        // border-width: 7px 0px 7px 7px;
+        // position: absolute;
+        // margin-left: -15px;
+        // margin-top: 4px;
       }
     }
   }
@@ -124,21 +135,22 @@ ol {
     font-size: 20px;
     text-align: left;
 
+    //Styled heading markers
     &:before {
       content: "";
       position: absolute;
-      width: 45px;
+      width: 40px;
       height: 5px;
       bottom: -4px;
-      left: -25px;
+      left: -35px;
       z-index: -1;
-      background: $secondary-color;
+      background: $primary-color;
       border-radius: 5px;
     }
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
     margin-top: 20px;
   }

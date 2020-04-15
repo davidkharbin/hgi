@@ -1,9 +1,5 @@
 //Phones, iPhone 6 and later
 @media (min-width: 481px) {
-  .container {
-    max-width: 100%;
-  }
-
   .nav-flex {
     display: flex;
     flex-direction: row;
@@ -40,7 +36,7 @@
 //iPhone 6/7/8 landscape
 @media (min-width: 667px) {
   .container {
-    max-width: 90%;
+    max-width: 98%;
   }
 
   .showcase-content {
@@ -51,7 +47,9 @@
 //iPads portrait
 @media (min-width: 768px) {
   .showcase-content {
-    margin-left: 270px;
+    margin-left: 300px;
+    padding: 5rem 0;
+    margin-right: 50px;
   }
 
   .info-content {
@@ -90,11 +88,40 @@
   }
 }
 
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-@media (min-width: 1025px) {
+//iPads landscape
+@media (min-width: 1024px) {
+  .showcase-content {
+    padding: 125px 0;
+    margin-left: 450px;
+  }
+
+  #showcase {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
+  #purpose {
+    // background-attachment: fixed;
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .iframe-container {
+    width: 800px;
+  }
+
+  .reading-page {
+    h1 {
+      font-size: 2rem;
+    }
+  }
 }
 
 /* 
