@@ -51,7 +51,7 @@ footer {
 
 .btn-light {
   background-color: #f4f4f4;
-  border: 2px solid #dcd0c0;
+  border: 1px solid #dcd0c0;
   color: #373737;
 }
 
@@ -118,7 +118,7 @@ ol li {
   padding: 15px 25px;
   background: #f4f4f4;
   margin: 10px;
-  border: 1px dotted #dcd0c0;
+  border: 1px solid #dcd0c0;
 }
 
 .reading-page article li {
@@ -406,7 +406,6 @@ article p:first-child {
 }
 
 .group-img {
-  max-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   display: block;
@@ -625,6 +624,9 @@ footer .footer-b {
 }
 
 @media (min-width: 1024px) {
+  .container {
+    width: 900px;
+  }
   .showcase-content {
     padding: 125px 0;
     margin-left: 450px;
@@ -632,45 +634,85 @@ footer .footer-b {
   #showcase h1 {
     font-size: 3.5rem;
   }
+  #features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #features .box {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+  }
   #purpose h2 {
     font-size: 3rem;
   }
   #purpose p {
     font-size: 1.2rem;
   }
-  .iframe-container {
-    width: 800px;
+  .span-all {
+    -webkit-column-span: all;
+            column-span: all;
   }
   .reading-page h1 {
     font-size: 2rem;
   }
-}
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-@media (min-width: 1281px) {
   .reading-page article {
     -webkit-column-gap: 40px;
             column-gap: 40px;
     -webkit-column-rule: solid 1px #dcd0c0;
             column-rule: solid 1px #dcd0c0;
   }
+  .iframe-container {
+    max-width: 750px;
+  }
+  .flex-dbs {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
   #training-top {
-    -webkit-column-count: 3;
-            column-count: 3;
+    -webkit-column-count: 2;
+            column-count: 2;
   }
   #foreword {
     -webkit-column-count: 2;
             column-count: 2;
   }
   #intro {
-    -webkit-column-count: 3;
-            column-count: 3;
+    -webkit-column-count: 1;
+            column-count: 1;
   }
-  .span-all {
-    -webkit-column-span: all;
-            column-span: all;
+  #equipment {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+  #optimal-standing {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+  #hip-rotation {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+  #side-to-sides {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+  #heel-strike {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+  #drag {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+  #additional {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
+  #acknowledgements {
+    -webkit-column-count: 1;
+            column-count: 1;
   }
 }

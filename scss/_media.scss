@@ -90,6 +90,10 @@
 
 //iPads landscape
 @media (min-width: 1024px) {
+  .container {
+    width: 900px;
+  }
+
   .showcase-content {
     padding: 125px 0;
     margin-left: 450px;
@@ -101,9 +105,15 @@
     }
   }
 
-  #purpose {
-    // background-attachment: fixed;
+  #features {
+    display: flex;
 
+    .box {
+      align-self: stretch;
+    }
+  }
+
+  #purpose {
     h2 {
       font-size: 3rem;
     }
@@ -113,31 +123,32 @@
     }
   }
 
-  .iframe-container {
-    width: 800px;
+  .span-all {
+    column-span: all;
   }
 
   .reading-page {
     h1 {
       font-size: 2rem;
     }
-  }
-}
 
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-@media (min-width: 1281px) {
-  .reading-page {
     article {
       column-gap: 40px;
       column-rule: solid 1px $secondary-color;
     }
   }
 
+  .iframe-container {
+    max-width: 750px;
+  }
+
+  .flex-dbs {
+    justify-content: left;
+  }
+
+  //column rules
   #training-top {
-    column-count: 3;
+    column-count: 2;
   }
 
   #foreword {
@@ -145,10 +156,42 @@
   }
 
   #intro {
-    column-count: 3;
+    column-count: 1;
   }
 
-  .span-all {
-    column-span: all;
+  #equipment {
+    column-count: 2;
   }
+
+  #optimal-standing {
+    column-count: 2;
+  }
+
+  #hip-rotation {
+    column-count: 2;
+  }
+
+  #side-to-sides {
+    column-count: 2;
+  }
+
+  #heel-strike {
+    column-count: 2;
+  }
+
+  #drag {
+    column-count: 2;
+  }
+
+  #additional {
+    column-count: 1;
+  }
+
+  #acknowledgements {
+    column-count: 1;
+  }
+}
+
+//Desktops
+@media (min-width: 1224px) {
 }
