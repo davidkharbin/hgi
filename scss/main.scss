@@ -188,8 +188,9 @@
 }
 
 .group-img {
-  object-fit: contain;
-  display: block;
+  // object-fit: contain;
+  // display: block;
+  width: 100%;
   margin: 10px auto;
 }
 

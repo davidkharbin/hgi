@@ -209,6 +209,11 @@ article p:first-child {
   margin-top: 0px;
 }
 
+.img-container {
+  margin: auto;
+  max-width: 800px;
+}
+
 /*---------------------------------------------------======
 ---------------------------------------------------||Header
 -----------------------------------------------------======
@@ -406,9 +411,7 @@ article p:first-child {
 }
 
 .group-img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  display: block;
+  width: 100%;
   margin: 10px auto;
 }
 
