@@ -8,86 +8,86 @@
 
 // Navigation
 #navbar {
-  background: $dark-color;
-  overflow: auto;
-  border-bottom: solid 1px $primary-color;
+	background: $dark-color;
+	overflow: auto;
+	border-bottom: solid 1px $primary-color;
 
-  .leg-logo {
-    height: 50px;
-    width: 50px;
-    background: $logo-image center center/cover;
-    border-radius: 50%;
-    object-fit: contain;
-    margin-top: 14px;
-  }
+	.leg-logo {
+		height: 50px;
+		width: 50px;
+		background: $logo-image center center/cover;
+		border-radius: 50%;
+		object-fit: contain;
+		margin-top: 14px;
+	}
 
-  .logo-flex {
-    display: flex;
-    padding-right: 30px;
+	.logo-flex {
+		display: flex;
+		padding-right: 30px;
 
-    h1 {
-      font-size: 2.5rem;
-      margin-top: 12px;
-    }
-  }
+		h1 {
+			font-size: 2.5rem;
+			margin-top: 12px;
+		}
+	}
 
-  ul {
-    li {
-      list-style: none;
+	ul {
+		li {
+			list-style: none;
 
-      a {
-        display: block;
-        padding: 7px;
-        text-align: center;
-        border-radius: 5px;
+			a {
+				display: block;
+				padding: 7px;
+				text-align: center;
+				border-radius: 5px;
 
-        &:hover {
-          background: $secondary-color;
-          color: $dark-color;
-        }
+				&:hover {
+					background: $secondary-color;
+					color: $dark-color;
+				}
 
-        &.current {
-          background: $primary-color;
-          color: $dark-color;
-          border-radius: 5px;
-        }
-      }
-    }
-  }
+				&.current {
+					background: $primary-color;
+					color: $dark-color;
+					border-radius: 5px;
+				}
+			}
+		}
+	}
 }
 
 .nav-flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 //Showcase
 #showcase {
-  background: linear-gradient(rgba(55, 55, 55, 0.5), rgba(55, 55, 55, 0.5)),
-    $showcase-image no-repeat center center/cover;
-  border-bottom: 1px solid $primary-color;
-  overflow: hidden;
+	background: linear-gradient(rgba(55, 55, 55, 0.5), rgba(55, 55, 55, 0.5)),
+		$showcase-image no-repeat center center/cover;
+	border-bottom: 1px solid $primary-color;
+	overflow: hidden;
 
-  h1 {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-  }
+	h1 {
+		font-size: 2.5rem;
+		line-height: 3.5rem;
+	}
 
-  p {
-    font-size: 1.1rem;
-    line-height: 2rem;
-    margin: 1rem 0;
-    padding-bottom: 1.1rem;
-  }
+	p {
+		font-size: 1.1rem;
+		line-height: 2rem;
+		margin: 1rem 0;
+		padding-bottom: 1.1rem;
+	}
 }
 
 .showcase-content {
-  color: white;
-  padding: 4rem 0;
-  margin-left: 110px;
-  text-align: center;
-  overflow: hidden;
+	color: white;
+	padding: 4rem 0;
+	margin-left: 110px;
+	text-align: center;
+	overflow: hidden;
 }
 
 /*------------------------------------------------=========
@@ -96,57 +96,57 @@
 */
 // Intro box
 #home-info {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: stretch;
-  text-align: center;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: stretch;
+	text-align: center;
 
-  .info-img {
-    background: linear-gradient(rgba(55, 55, 55, 0.3), rgba(55, 55, 55, 0.3)),
-      $info-image no-repeat left center/cover;
-    flex-basis: 500px;
-  }
+	.info-img {
+		background: linear-gradient(rgba(55, 55, 55, 0.4), rgba(55, 55, 55, 0.4)),
+			$info-image no-repeat left center/cover;
+		flex-basis: 500px;
+	}
 
-  .info-content {
-    padding: 40px 20px;
-    margin: 0 auto;
+	.info-content {
+		padding: 40px 20px;
+		margin: 0 auto;
 
-    p {
-      margin: 30px 0;
-    }
+		p {
+			margin: 30px 0;
+		}
 
-    h2 {
-      margin: 20px auto;
-    }
+		h2 {
+			margin: 20px auto;
+		}
 
-    li {
-      line-height: 1.5rem;
-      margin-bottom: 0.75rem;
-    }
-  }
+		li {
+			line-height: 1.5rem;
+			margin-bottom: 0.75rem;
+		}
+	}
 }
 
 // Icon Boxes
 #features {
-  align-items: center;
+	align-items: center;
 
-  .box {
-    text-align: center;
-    padding: 3rem;
-    width: 100%;
+	.box {
+		text-align: center;
+		padding: 3rem;
+		width: 100%;
 
-    h3 {
-      padding: 0.75rem 0;
-    }
+		h3 {
+			padding: 0.75rem 0;
+		}
 
-    p {
-      margin: 0.5rem 0;
-    }
+		p {
+			margin: 0.5rem 0;
+		}
 
-    a {
-      margin-top: 1.5rem;
-    }
-  }
+		a {
+			margin-top: 1.5rem;
+		}
+	}
 }
 
 /*------------------------------------------===============
@@ -154,26 +154,26 @@
 --------------------------------------------===============
 */
 #purpose {
-  background: linear-gradient(rgba(55, 55, 55, 0.6), rgba(55, 55, 55, 0.6)),
-    $purpose-image no-repeat center center/cover;
-  color: white;
-  text-align: center;
-  border-bottom: 1px solid $primary-color;
+	background: linear-gradient(rgba(55, 55, 55, 0.6), rgba(55, 55, 55, 0.6)),
+		$purpose-image no-repeat center center/cover;
+	color: white;
+	text-align: center;
+	border-bottom: 1px solid $primary-color;
 
-  h2 {
-    font-size: 2.3rem;
-    margin: 1.3rem 0;
-  }
+	h2 {
+		font-size: 2.3rem;
+		margin: 1.3rem 0;
+	}
 
-  p {
-    margin: 1rem 0;
-  }
+	p {
+		margin: 1rem 0;
+	}
 }
 
 .purpose-content {
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 25px 0;
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 25px 0;
 }
 
 /*-----------------------------------------------==========
@@ -182,59 +182,59 @@
 */
 
 .about-page {
-  h2 {
-    text-align: center;
-  }
+	h2 {
+		text-align: center;
+	}
 }
 
 .group-img {
-  object-fit: contain;
-  display: block;
-  margin: 10px auto;
+	object-fit: contain;
+	display: block;
+	margin: 10px auto;
 }
 
 #contact-info {
-  p {
-    text-align: center;
-  }
+	p {
+		text-align: center;
+	}
 }
 
 address {
-  text-align: center;
+	text-align: center;
 }
 
 #our-team {
-  padding: 5px 20px;
+	padding: 5px 20px;
 }
 
 .team-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .team-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 0;
-  padding: 20px 40px;
-  border: 1px solid $primary-color;
-  text-align: center;
-  max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0;
+	padding: 20px 40px;
+	border: 1px solid $primary-color;
+	text-align: center;
+	max-width: 400px;
 
-  img {
-    display: block;
-    max-height: 100px;
-    max-width: 100px;
-    width: auto;
-    height: auto;
-    border-radius: 50%;
-    margin: 10px 0;
-    border: 1px solid $secondary-color;
-  }
+	img {
+		display: block;
+		max-height: 100px;
+		max-width: 100px;
+		width: auto;
+		height: auto;
+		border-radius: 50%;
+		margin: 10px 0;
+		border: 1px solid $secondary-color;
+	}
 }
 
 /*-------------------------------------------==============
@@ -243,66 +243,66 @@ address {
 */
 
 .iframe-container {
-  overflow: hidden;
-  padding-top: 50%;
-  position: relative;
-  margin: 15px auto;
+	overflow: hidden;
+	padding-top: 50%;
+	position: relative;
+	margin: 15px auto;
 
-  iframe {
-    border: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
+	iframe {
+		border: 0;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
 }
 
 .span-all {
-  column-span: all;
+	column-span: all;
 }
 
 .center-link {
-  width: 100%;
-  text-align: center;
+	width: 100%;
+	text-align: center;
 }
 
 .bullet {
-  padding-left: 10px;
+	padding-left: 10px;
 }
 
 //Acknowledgements
 #acknowledgements {
-  ul {
-    text-align: center;
-  }
+	ul {
+		text-align: center;
+	}
 }
 /*---------------------------------------------------======
 ---------------------------------------------------||Footer
 -----------------------------------------------------======
 */
 footer {
-  display: flex;
-  flex-direction: column;
-  background: $light-color;
+	display: flex;
+	flex-direction: column;
+	background: $light-color;
 
-  .footer-a {
-    text-align: center;
-    font-size: 0.8rem;
-    margin: 5px auto;
-    padding: 1rem;
-    width: 85%;
-  }
+	.footer-a {
+		text-align: center;
+		font-size: 0.8rem;
+		margin: 5px auto;
+		padding: 1rem;
+		width: 85%;
+	}
 
-  .footer-b {
-    text-align: center;
-    padding: 1rem;
-    border-top: 1px solid $secondary-color;
-  }
+	.footer-b {
+		text-align: center;
+		padding: 1rem;
+		border-top: 1px solid $secondary-color;
+	}
 }
 
 .center-text {
-  text-align: center;
+	text-align: center;
 }
 
 @import "media";

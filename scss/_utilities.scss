@@ -1,85 +1,85 @@
 .container {
-  margin: auto;
-  overflow: auto;
-  max-width: 100%;
+	margin: auto;
+	overflow: auto;
+	max-width: 100%;
 }
 
 footer {
-  width: 100%;
+	width: 100%;
 }
 
 .text-primary {
-  color: $primary-color;
+	color: $primary-color;
 }
 
 %btn {
-  display: inline-block;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 5px;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+	border-radius: 5px;
 }
 
 .btn-light {
-  @extend %btn;
-  background-color: $light-color;
-  border: 1px solid $secondary-color;
-  color: $dark-color;
+	@extend %btn;
+	background-color: $light-color;
+	border: 1px solid $secondary-color;
+	color: $dark-color;
 
-  &:hover {
-    background-color: $dark-color;
-    color: $light-color;
-  }
+	&:hover {
+		background-color: $dark-color;
+		color: $light-color;
+	}
 }
 
 .btn-dark {
-  @extend %btn;
-  background: $dark-color;
-  border: 1px solid $primary-color;
+	@extend %btn;
+	background: $dark-color;
+	border: 1px solid $primary-color;
 
-  &:hover {
-    background: $light-color;
-    color: $dark-color;
-  }
+	&:hover {
+		background: $secondary-color;
+		color: $dark-color;
+	}
 }
 
 .bg-primary {
-  background: $primary-color;
-  color: $dark-color;
+	background: $primary-color;
+	color: $dark-color;
 }
 
 .bg-secondary {
-  background: $secondary-color;
-  color: $dark-color;
+	background: $secondary-color;
+	color: $dark-color;
 }
 
 .bg-dark {
-  background: $dark-color;
-  color: white;
+	background: $dark-color;
+	color: white;
 }
 
 .bg-light {
-  background: $light-color;
-  color: $dark-color;
+	background: $light-color;
+	color: $dark-color;
 }
 
 .bg-white {
-  background: white;
-  color: $dark-color;
+	background: white;
+	color: $dark-color;
 }
 
 a {
-  text-decoration: none;
-  color: white;
+	text-decoration: none;
+	color: white;
 }
 
 ol {
-  display: inline-block;
-  text-align: left;
-  padding-left: 20px;
+	display: inline-block;
+	text-align: left;
+	padding-left: 20px;
 
-  li {
-    list-style: decimal outside;
-  }
+	li {
+		list-style: decimal outside;
+	}
 }
 
 /*--------------------------------------------------=======
@@ -87,103 +87,103 @@ ol {
 ----------------------------------------------------=======
 */
 .reading-page {
-  article {
-    padding: 15px 25px;
-    background: $light-color;
-    margin: 10px;
-    border: 1px solid $secondary-color;
+	article {
+		padding: 15px 25px;
+		background: $light-color;
+		margin: 10px;
+		border: 1px solid $secondary-color;
 
-    li {
-      margin: 15px 0;
-    }
+		li {
+			margin: 15px 0;
+		}
 
-    img {
-      max-width: 100%;
-      object-fit: contain;
-      display: block;
-      margin: 10px auto;
-    }
-  }
+		img {
+			max-width: 100%;
+			object-fit: contain;
+			display: block;
+			margin: 10px auto;
+		}
+	}
 
-  .bullet {
-    li {
-      position: relative;
-      &::before {
-        content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-        color: $primary-color; /* Change the color */
-        font-weight: bold; /* If you want it to be bold */
-        display: inline-block; /* Needed to add space between the bullet and the text */
-        width: 1em; /* Also needed for space (tweak if needed) */
-        margin-left: -1em; /* Also needed for space (tweak if needed) */
+	.bullet {
+		li {
+			position: relative;
+			&::before {
+				content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+				color: $primary-color; /* Change the color */
+				font-weight: bold; /* If you want it to be bold */
+				display: inline-block; /* Needed to add space between the bullet and the text */
+				width: 1em; /* Also needed for space (tweak if needed) */
+				margin-left: -1em; /* Also needed for space (tweak if needed) */
 
-        //FOR ARROW BULLETS
-        // border-color: transparent $primary-color;
-        // border-style: solid;
-        // border-width: 7px 0px 7px 7px;
-        // position: absolute;
-        // margin-left: -15px;
-        // margin-top: 4px;
-      }
-    }
-  }
+				//FOR ARROW BULLETS
+				// border-color: transparent $primary-color;
+				// border-style: solid;
+				// border-width: 7px 0px 7px 7px;
+				// position: absolute;
+				// margin-left: -15px;
+				// margin-top: 4px;
+			}
+		}
+	}
 
-  h3 {
-    display: inline-block;
-    margin-top: 10px;
-    position: relative;
-    z-index: 1;
-    font-size: 20px;
-    text-align: left;
+	h3 {
+		display: inline-block;
+		margin-top: 10px;
+		position: relative;
+		z-index: 1;
+		font-size: 20px;
+		text-align: left;
 
-    //Styled heading markers
-    &:before {
-      content: "";
-      position: absolute;
-      width: 40px;
-      height: 5px;
-      bottom: -4px;
-      left: -35px;
-      z-index: -1;
-      background: $primary-color;
-      border-radius: 5px;
-    }
-  }
+		//Styled heading markers
+		&:before {
+			content: "";
+			position: absolute;
+			width: 40px;
+			height: 5px;
+			bottom: -4px;
+			left: -35px;
+			z-index: -1;
+			background: $primary-color;
+			border-radius: 5px;
+		}
+	}
 
-  h1 {
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 20px;
-  }
+	h1 {
+		font-size: 2rem;
+		text-align: center;
+		margin-top: 20px;
+	}
 
-  a {
-    color: $primary-color;
-    text-decoration: underline;
-  }
+	a {
+		color: $primary-color;
+		text-decoration: underline;
+	}
 }
 
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 h3 {
-  text-align: center;
-  padding-top: 5px;
+	text-align: center;
+	padding-top: 5px;
 }
 
 article p {
-  text-align: justify;
-  margin: 16px 0;
+	text-align: justify;
+	margin: 16px 0;
 }
 
 //Heading spacer
 .line {
-  width: 80px;
-  height: 2px;
-  background: $primary-color;
-  margin: 10px auto 25px auto;
+	width: 80px;
+	height: 2px;
+	background: $primary-color;
+	margin: 10px auto 25px auto;
 }
 
 //for shaving off the top in column views//
 article p:first-child {
-  margin-top: 0px;
+	margin-top: 0px;
 }

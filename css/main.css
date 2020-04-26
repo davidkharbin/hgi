@@ -66,7 +66,7 @@ footer {
 }
 
 .btn-dark:hover {
-  background: #f4f4f4;
+  background: #dcd0c0;
   color: #373737;
 }
 
@@ -322,8 +322,8 @@ article p:first-child {
 }
 
 #home-info .info-img {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(55, 55, 55, 0.3)), to(rgba(55, 55, 55, 0.3))), url(../img/evaluationcamp2.jpg) no-repeat left center/cover;
-  background: linear-gradient(rgba(55, 55, 55, 0.3), rgba(55, 55, 55, 0.3)), url(../img/evaluationcamp2.jpg) no-repeat left center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(55, 55, 55, 0.4)), to(rgba(55, 55, 55, 0.4))), url(../img/evaluationcamp2.jpg) no-repeat left center/cover;
+  background: linear-gradient(rgba(55, 55, 55, 0.4), rgba(55, 55, 55, 0.4)), url(../img/evaluationcamp2.jpg) no-repeat left center/cover;
   -ms-flex-preferred-size: 500px;
       flex-basis: 500px;
 }
@@ -714,5 +714,55 @@ footer .footer-b {
   #acknowledgements {
     -webkit-column-count: 1;
             column-count: 1;
+  }
+}
+
+@media (min-width: 1224px) {
+  .container {
+    width: 1000px;
+  }
+  #showcase {
+    height: 85vh;
+  }
+  #showcase h1 {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+  #showcase p {
+    font-size: 1.4rem;
+  }
+  .showcase-content {
+    padding: 250px 0 0 0;
+  }
+  #home-info .info-content {
+    width: 600px;
+    padding: 80px 20px;
+  }
+  #home-info .info-content h2 {
+    font-size: 3.5rem;
+  }
+  #home-info .info-content li,
+  #home-info .info-content p {
+    font-size: 1.3rem;
+  }
+  #home-info .info-img {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    height: 95vh;
+  }
+  #features .box {
+    padding: 5rem;
+  }
+  #purpose {
+    background-attachment: fixed;
+  }
+  #purpose .purpose-content {
+    padding: 200px 0;
+  }
+  #purpose .purpose-content h2 {
+    font-size: 3.5rem;
+  }
+  #purpose .purpose-content p {
+    font-size: 1.5rem;
   }
 }
