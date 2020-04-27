@@ -105,6 +105,7 @@ ol {
 		}
 	}
 
+	//Custom bullet points
 	.bullet {
 		li {
 			position: relative;
@@ -116,7 +117,7 @@ ol {
 				width: 1em; /* Also needed for space (tweak if needed) */
 				margin-left: -1em; /* Also needed for space (tweak if needed) */
 
-				//FOR ARROW BULLETS
+				//Considering ARROW BULLETS
 				// border-color: transparent $primary-color;
 				// border-style: solid;
 				// border-width: 7px 0px 7px 7px;
@@ -143,7 +144,7 @@ ol {
 			height: 5px;
 			bottom: -4px;
 			left: -35px;
-			z-index: -1;
+			z-index: 1000;
 			background: $primary-color;
 			border-radius: 5px;
 		}
@@ -190,6 +191,6 @@ article p:first-child {
 
 //mainly for the group photo on the about page
 .img-container {
-  margin: auto;
-  max-width: 800px;
+	margin: auto;
+	max-width: 800px;
 }

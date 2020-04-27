@@ -52,8 +52,13 @@
 		margin-right: 50px;
 	}
 
-	.info-content {
-		max-width: 60%;
+	#home-info {
+		.info-content {
+			max-width: 60%;
+			h2 {
+				font-size: 3rem;
+			}
+		}
 	}
 
 	.purpose-content {
@@ -67,7 +72,7 @@
 	.flex-dbs {
 		display: flex;
 		flex-direction: row-reverse;
-		justify-content: space-between;
+		justify-content: left;
 	}
 
 	.reading-page {
@@ -138,10 +143,6 @@
 		}
 	}
 
-	.iframe-container {
-		max-width: 750px;
-	}
-
 	.flex-dbs {
 		justify-content: left;
 	}
@@ -156,7 +157,10 @@
 	}
 
 	#intro {
-		column-count: 1;
+		column-count: 3;
+		.flex-dbs {
+			flex-direction: column;
+		}
 	}
 
 	#equipment {
@@ -190,9 +194,15 @@
 	#acknowledgements {
 		column-count: 1;
 	}
+
+	.video-top {
+		column-span: all;
+		padding-top: 25%;
+		max-width: 550px;
+	}
 }
 
-//Desktops
+//Desktops 1224-1920
 @media (min-width: 1224px) {
 	.container {
 		width: 1000px;
@@ -257,5 +267,84 @@
 				font-size: 1.5rem;
 			}
 		}
+	}
+
+	#about,
+	#what,
+	#donate {
+		padding: 25px 400px;
+		text-align: center;
+	}
+
+	#story {
+		column-count: 2;
+		h1 {
+			margin: 0;
+		}
+	}
+
+	footer {
+		flex-direction: row-reverse;
+		border: 1px solid $secondary-color;
+
+		.footer-a {
+			width: 50%;
+		}
+
+		.footer-b {
+			width: 50%;
+			border: none;
+			border-right: 1px solid $secondary-color;
+			p {
+				margin-top: 10px;
+			}
+		}
+	}
+
+	//column rules
+	#training-top {
+		column-count: 5;
+	}
+	#foreword {
+		column-count: 2;
+	}
+
+	#intro {
+		column-count: 5;
+		.flex-dbs {
+			flex-direction: column;
+		}
+	}
+
+	#equipment {
+		column-count: 2;
+	}
+
+	#optimal-standing {
+		column-count: 2;
+	}
+
+	#hip-rotation {
+		column-count: 2;
+	}
+
+	#side-to-sides {
+		column-count: 2;
+	}
+
+	#heel-strike {
+		column-count: 2;
+	}
+
+	#drag {
+		column-count: 2;
+	}
+
+	#additional {
+		column-count: 1;
+	}
+
+	#acknowledgements {
+		column-count: 1;
 	}
 }
