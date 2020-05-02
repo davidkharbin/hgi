@@ -206,12 +206,21 @@ article p {
 }
 
 article p:first-child {
-  margin-top: 0px;
+  margin: 0px;
 }
 
 .img-container {
   margin: auto;
   max-width: 800px;
+}
+
+strong {
+  font-weight: inherit;
+}
+
+.bold {
+  font-weight: 700;
+  display: inline;
 }
 
 /*---------------------------------------------------======
@@ -623,19 +632,38 @@ footer .footer-b {
   .reading-page h3 {
     margin-top: 35px;
   }
+  #additional,
+  #acknowledgements {
+    text-align: center;
+  }
   #additional .line,
   #acknowledgements .line {
     margin: 10px auto 0 auto;
   }
+  #additional h1,
+  #acknowledgements h1 {
+    margin-bottom: 10px;
+  }
   #additional h3,
   #acknowledgements h3 {
-    margin-top: 10px;
+    display: block;
+    text-align: center;
+    -webkit-column-span: all;
+            column-span: all;
+    margin: 10px 0 35px;
+  }
+  #additional h3::before,
+  #acknowledgements h3::before {
+    display: none;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
     width: 900px;
+  }
+  article h3:first-child {
+    margin: 0;
   }
   .showcase-content {
     padding: 125px 0;
@@ -677,6 +705,12 @@ footer .footer-b {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
+  }
+  .video-top {
+    -webkit-column-span: all;
+            column-span: all;
+    padding-top: 45%;
+    max-width: 800px;
   }
   #training-top {
     -webkit-column-count: 2;
@@ -727,12 +761,6 @@ footer .footer-b {
   #acknowledgements {
     -webkit-column-count: 1;
             column-count: 1;
-  }
-  .video-top {
-    -webkit-column-span: all;
-            column-span: all;
-    padding-top: 25%;
-    max-width: 550px;
   }
 }
 
@@ -797,6 +825,10 @@ footer .footer-b {
   #story h1 {
     margin: 0;
   }
+  .video-top {
+    padding-top: 20%;
+    max-width: 700px;
+  }
   footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -850,19 +882,19 @@ footer .footer-b {
             column-count: 2;
   }
   #heel-strike {
-    -webkit-column-count: 2;
-            column-count: 2;
+    -webkit-column-count: 3;
+            column-count: 3;
   }
   #drag {
     -webkit-column-count: 2;
             column-count: 2;
   }
   #additional {
-    -webkit-column-count: 1;
-            column-count: 1;
+    -webkit-column-count: 2;
+            column-count: 2;
   }
   #acknowledgements {
-    -webkit-column-count: 1;
-            column-count: 1;
+    -webkit-column-count: 3;
+            column-count: 3;
   }
 }

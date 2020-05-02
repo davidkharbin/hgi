@@ -184,13 +184,22 @@ article p {
 	margin: 10px auto 25px auto;
 }
 
-//for shaving off the top in column views//
+//for shaving off margin in column views//
 article p:first-child {
-	margin-top: 0px;
+	margin: 0px;
 }
 
 //mainly for the group photo on the about page
 .img-container {
 	margin: auto;
 	max-width: 800px;
+}
+
+strong {
+	font-weight: inherit;
+}
+
+.bold {
+	font-weight: 700;
+	display: inline;
 }

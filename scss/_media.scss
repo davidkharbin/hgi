@@ -83,12 +83,24 @@
 
 	#additional,
 	#acknowledgements {
+		text-align: center;
 		.line {
 			margin: 10px auto 0 auto;
 		}
 
+		h1 {
+			margin-bottom: 10px;
+		}
+
 		h3 {
-			margin-top: 10px;
+			display: block;
+			text-align: center;
+			column-span: all;
+			margin: 10px 0 35px;
+
+			&::before {
+				display: none;
+			}
 		}
 	}
 }
@@ -97,6 +109,12 @@
 @media (min-width: 1024px) {
 	.container {
 		width: 900px;
+	}
+
+	article {
+		h3:first-child {
+			margin: 0;
+		}
 	}
 
 	.showcase-content {
@@ -147,6 +165,12 @@
 		justify-content: left;
 	}
 
+	.video-top {
+		column-span: all;
+		padding-top: 45%;
+		max-width: 800px;
+	}
+
 	//column rules
 	#training-top {
 		column-count: 2;
@@ -193,12 +217,6 @@
 
 	#acknowledgements {
 		column-count: 1;
-	}
-
-	.video-top {
-		column-span: all;
-		padding-top: 25%;
-		max-width: 550px;
 	}
 }
 
@@ -283,6 +301,11 @@
 		}
 	}
 
+	.video-top {
+		padding-top: 20%;
+		max-width: 700px;
+	}
+
 	footer {
 		flex-direction: row-reverse;
 		border: 1px solid $secondary-color;
@@ -333,7 +356,7 @@
 	}
 
 	#heel-strike {
-		column-count: 2;
+		column-count: 3;
 	}
 
 	#drag {
@@ -341,10 +364,10 @@
 	}
 
 	#additional {
-		column-count: 1;
+		column-count: 2;
 	}
 
 	#acknowledgements {
-		column-count: 1;
+		column-count: 3;
 	}
 }
