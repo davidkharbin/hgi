@@ -90,8 +90,11 @@ ol {
 	article {
 		padding: 15px 25px;
 		background: $light-color;
-		margin: 10px;
-		border: 1px solid $secondary-color;
+		margin: 20px auto;
+		max-width: 1600px;
+    column-rule: dotted 1px #dbe2e8;
+		box-shadow: 0 0 10px 0 rgba(46,60,73,0.2);
+		border: 1px solid #dbe2e8;
 
 		li {
 			margin: 15px 0;
@@ -116,15 +119,11 @@ ol {
 				display: inline-block; /* Needed to add space between the bullet and the text */
 				width: 1em; /* Also needed for space (tweak if needed) */
 				margin-left: -1em; /* Also needed for space (tweak if needed) */
-
-				//Considering ARROW BULLETS
-				// border-color: transparent $primary-color;
-				// border-style: solid;
-				// border-width: 7px 0px 7px 7px;
-				// position: absolute;
-				// margin-left: -15px;
-				// margin-top: 4px;
 			}
+		}
+
+		&.centered-bullet {
+			text-align: center;
 		}
 	}
 
@@ -140,12 +139,11 @@ ol {
 		&:before {
 			content: "";
 			position: absolute;
-			width: 40px;
-			height: 5px;
-			bottom: -4px;
-			left: -35px;
+			width: 5px;
+			height: 100%;
+			left: -13px;
 			z-index: 1000;
-			background: $primary-color;
+			background: $secondary-color;
 			border-radius: 5px;
 		}
 	}

@@ -39,7 +39,6 @@
 				display: block;
 				padding: 7px;
 				text-align: center;
-				border-radius: 5px;
 
 				&:hover {
 					background: $secondary-color;
@@ -47,9 +46,7 @@
 				}
 
 				&.current {
-					background: $primary-color;
-					color: $dark-color;
-					border-radius: 5px;
+					border-bottom: 1px solid $primary-color;
 				}
 			}
 		}
@@ -240,6 +237,13 @@ address {
 }
 
 /*-------------------------------------------==============
+------------------------------------------||Technical Terms
+---------------------------------------------==============
+*/
+
+
+
+/*-------------------------------------------==============
 -------------------------------------------||Brace Training
 ---------------------------------------------==============
 */
@@ -287,6 +291,10 @@ footer {
 	display: flex;
 	flex-direction: column;
 	background: $light-color;
+	max-width: 1600px;
+	margin: 0 auto;
+	box-shadow: 0 0 10px 0 rgba(46, 60, 73, 0.2);
+  border: 1px solid #dbe2e8;
 
 	.footer-a {
 		text-align: center;
@@ -299,7 +307,6 @@ footer {
 	.footer-b {
 		text-align: center;
 		padding: 1rem;
-		border-top: 1px solid $secondary-color;
 	}
 }
 

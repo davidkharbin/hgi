@@ -117,8 +117,13 @@ ol li {
 .reading-page article {
   padding: 15px 25px;
   background: #f4f4f4;
-  margin: 10px;
-  border: 1px solid #dcd0c0;
+  margin: 20px auto;
+  max-width: 1600px;
+  -webkit-column-rule: dotted 1px #dbe2e8;
+          column-rule: dotted 1px #dbe2e8;
+  -webkit-box-shadow: 0 0 10px 0 rgba(46, 60, 73, 0.2);
+          box-shadow: 0 0 10px 0 rgba(46, 60, 73, 0.2);
+  border: 1px solid #dbe2e8;
 }
 
 .reading-page article li {
@@ -152,6 +157,10 @@ ol li {
   /* Also needed for space (tweak if needed) */
 }
 
+.reading-page .bullet.centered-bullet {
+  text-align: center;
+}
+
 .reading-page h3 {
   display: inline-block;
   margin-top: 10px;
@@ -164,12 +173,11 @@ ol li {
 .reading-page h3:before {
   content: "";
   position: absolute;
-  width: 40px;
-  height: 5px;
-  bottom: -4px;
-  left: -35px;
+  width: 5px;
+  height: 100%;
+  left: -13px;
   z-index: 1000;
-  background: #c0b283;
+  background: #dcd0c0;
   border-radius: 5px;
 }
 
@@ -263,7 +271,6 @@ strong {
   display: block;
   padding: 7px;
   text-align: center;
-  border-radius: 5px;
 }
 
 #navbar ul li a:hover {
@@ -272,9 +279,7 @@ strong {
 }
 
 #navbar ul li a.current {
-  background: #c0b283;
-  color: #373737;
-  border-radius: 5px;
+  border-bottom: 1px solid #c0b283;
 }
 
 .nav-flex {
@@ -488,6 +493,10 @@ address {
 }
 
 /*-------------------------------------------==============
+------------------------------------------||Technical Terms
+---------------------------------------------==============
+*/
+/*-------------------------------------------==============
 -------------------------------------------||Brace Training
 ---------------------------------------------==============
 */
@@ -538,6 +547,11 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #f4f4f4;
+  max-width: 1600px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 10px 0 rgba(46, 60, 73, 0.2);
+          box-shadow: 0 0 10px 0 rgba(46, 60, 73, 0.2);
+  border: 1px solid #dbe2e8;
 }
 
 footer .footer-a {
@@ -551,7 +565,6 @@ footer .footer-a {
 footer .footer-b {
   text-align: center;
   padding: 1rem;
-  border-top: 1px solid #dcd0c0;
 }
 
 .center-text {
@@ -698,8 +711,6 @@ footer .footer-b {
   .reading-page article {
     -webkit-column-gap: 40px;
             column-gap: 40px;
-    -webkit-column-rule: solid 1px #dcd0c0;
-            column-rule: solid 1px #dcd0c0;
   }
   .flex-dbs {
     -webkit-box-pack: left;
@@ -834,7 +845,6 @@ footer .footer-b {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    border: 1px solid #dcd0c0;
   }
   footer .footer-a {
     width: 50%;
@@ -842,7 +852,7 @@ footer .footer-b {
   footer .footer-b {
     width: 50%;
     border: none;
-    border-right: 1px solid #dcd0c0;
+    border-right: 1px dotted #dbe2e8;
   }
   footer .footer-b p {
     margin-top: 10px;
