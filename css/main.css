@@ -138,6 +138,30 @@ ol li {
   margin: 10px auto;
 }
 
+.reading-page article .download {
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.reading-page article .download .dl-child {
+  margin: 10px;
+}
+
+.reading-page article .download .dl-child a {
+  text-decoration: none;
+}
+
+.reading-page article .download .dl-child a:hover {
+  color: #373737;
+}
+
 .reading-page .bullet li {
   position: relative;
 }
@@ -416,6 +440,10 @@ strong {
   padding: 25px 0;
 }
 
+/*-----------------------------------------------==========
+----------------------------------------------||Ideal Brace
+-------------------------------------------------==========
+*/
 /*-----------------------------------------------==========
 -----------------------------------------------||About Page
 -------------------------------------------------==========
@@ -777,7 +805,7 @@ footer .footer-b {
 
 @media (min-width: 1224px) {
   .container {
-    width: 1000px;
+    width: 1500px;
   }
   #showcase {
     height: 85vh;

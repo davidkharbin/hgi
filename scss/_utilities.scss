@@ -106,6 +106,26 @@ ol {
 			display: block;
 			margin: 10px auto;
 		}
+
+		.download {
+      margin: 10px auto;
+			display: flex;
+			justify-content: center;
+			align-content: space-around;
+
+			.dl-child {
+				margin: 10px;
+
+				a {
+					text-decoration: none;
+				}
+
+				a:hover {
+					color: $dark-color;
+				}
+
+			}
+		}
 	}
 
 	//Custom bullet points
