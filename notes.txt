@@ -1,9 +1,7 @@
 #add navigation for training page
 
-#add links to the 'more' buttons in the home page 
 
 #features section
 
-#develop a page for 'your ideal brace', 'technical terms', 'your new brace' content
 
 #donation link in main nav
