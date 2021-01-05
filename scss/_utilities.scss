@@ -128,25 +128,6 @@ ol {
 		}
 	}
 
-	//Custom bullet points
-	.bullet {
-		li {
-			position: relative;
-			&::before {
-				content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-				color: $primary-color; /* Change the color */
-				font-weight: bold; /* If you want it to be bold */
-				display: inline-block; /* Needed to add space between the bullet and the text */
-				width: 1em; /* Also needed for space (tweak if needed) */
-				margin-left: -1em; /* Also needed for space (tweak if needed) */
-			}
-		}
-
-		&.centered-bullet {
-			text-align: center;
-		}
-	}
-
 	h3 {
 		display: inline-block;
 		margin-top: 10px;
@@ -172,12 +153,32 @@ ol {
 		font-size: 2rem;
 		text-align: center;
 		margin-top: 20px;
+		color: $dark-color;
 	}
 
 	a {
 		color: $primary-color;
 		text-decoration: underline;
 	}
+}
+
+//Custom bullet points
+.bullet {
+		li {
+			position: relative;
+			&::before {
+				content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+				color: $primary-color; /* Change the color */
+			  font-weight: bold; /* If you want it to be bold */
+				display: inline-block; /* Needed to add space between the bullet and the text */
+				width: 1em; /* Also needed for space (tweak if needed) */
+				margin-left: -1em; /* Also needed for space (tweak if needed) */
+			}
+		}
+
+		&.centered-bullet {
+			text-align: center;
+		}
 }
 
 ul {
@@ -187,6 +188,7 @@ ul {
 h3 {
 	text-align: center;
 	padding-top: 5px;
+	color: $dark-color;
 }
 
 article p {

@@ -162,29 +162,6 @@ ol li {
   color: #373737;
 }
 
-.reading-page .bullet li {
-  position: relative;
-}
-
-.reading-page .bullet li::before {
-  content: "\2022";
-  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #c0b283;
-  /* Change the color */
-  font-weight: bold;
-  /* If you want it to be bold */
-  display: inline-block;
-  /* Needed to add space between the bullet and the text */
-  width: 1em;
-  /* Also needed for space (tweak if needed) */
-  margin-left: -1em;
-  /* Also needed for space (tweak if needed) */
-}
-
-.reading-page .bullet.centered-bullet {
-  text-align: center;
-}
-
 .reading-page h3 {
   display: inline-block;
   margin-top: 10px;
@@ -209,11 +186,35 @@ ol li {
   font-size: 2rem;
   text-align: center;
   margin-top: 20px;
+  color: #373737;
 }
 
 .reading-page a {
   color: #c0b283;
   text-decoration: underline;
+}
+
+.bullet li {
+  position: relative;
+}
+
+.bullet li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #c0b283;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+}
+
+.bullet.centered-bullet {
+  text-align: center;
 }
 
 ul {
@@ -223,6 +224,7 @@ ul {
 h3 {
   text-align: center;
   padding-top: 5px;
+  color: #373737;
 }
 
 article p {
