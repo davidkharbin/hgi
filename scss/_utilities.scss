@@ -215,6 +215,22 @@ article p:first-child {
 	max-width: 800px;
 }
 
+.shoe-img-container {
+	margin: auto;
+	max-width: 800px;
+	padding-top: 75px;
+
+	img {
+		padding-top: 25px;
+	}
+}
+
+.img-caption {
+	font-size: small;
+	margin: 0 auto;
+	text-align: center;
+}
+
 strong {
 	font-weight: inherit;
 }
