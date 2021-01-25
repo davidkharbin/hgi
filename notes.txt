@@ -1,7 +1,15 @@
-#add navigation for training page
+Fonts
 
+Center everything and add navigation
 
-#features section
+Move about page to after home in the nav bar
 
+Technical terms page - split forword and acks, move forword to top
 
-#donation link in main nav
+newBrace page - expectations and reality section - remove first paragraph
+-done
+
+remove comfortsleeves.com from newBrace page
+
+address on about page - "place" is on wrong line ****
+-done
