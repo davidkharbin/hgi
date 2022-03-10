@@ -1,1 +1,1 @@
-fix mobile layout for home and about pages
+static html/css website for a non-profit organization
